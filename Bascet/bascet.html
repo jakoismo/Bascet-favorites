@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="basket.css" />
+    <title>səbət</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="img">
+        <button id="kontact_home">
+          <img
+            src="data:image/png;base64,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"
+            alt=""
+          />
+        </button>
+        <h1>kontakt</h1>
+      </div>
+      <div class="menu">
+        <a href="#"><i class="fa-solid fa-bars"></i></a>
+        <h2>Menu</h2>
+      </div>
+
+      <div class="searching">
+        <input type="text" placeholder="axtarış..." />
+      </div>
+
+      <div class="daxil_ol">
+        <div class="person">
+          <i class="fa-solid fa-person"></i>
+          <a href="#">Daxil olun</a>
+        </div>
+        <div class="favore">
+          <i class="fa-sharp fa-solid fa-heart main-heart"></i>
+        </div>
+        <label for="" id="like_count" class="indir">0</label>
+        <div class="basket">
+          <button id="bascet_click">
+            <i class="fa-solid fa-basket-shopping"></i>
+          </button>
+          <label for="">Səbət</label>
+          <label for="" id="say"> 0</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-things"></div>  <!-- Divleri buraya daxil ededciyil -->
+    <div class="odenilecek-mebleg">
+      <h6 id="return_cost">Ödəniləcək məbləğ: 0 azn</h6>
+    </div>
+    <div class="inside-bascet">
+      <ul id="sebet_ul"></ul>
+    </div>
+    <div class="like">
+      <p onclick="cl0se()" class="bagla">&times;</p>
+      <ul id="favorite_ul"></ul>
+    </div>
+    <script src="basket.js"></script>
+  </body>
+</html>
